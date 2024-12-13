@@ -41,7 +41,7 @@ export const Subtitle = styled.p`
 `;
 
 export const NameBox = styled.div`
-  background-image: url("sky-background.png");
+  background-image: url("img/sky-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

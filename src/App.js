@@ -1,13 +1,13 @@
 import GlobalStyles from "./styles/GlobalStyles";
 import Cover from "./pages/Cover/Cover";
-import CopywritingOne from "./pages/CopywritingOne/CopywritingOne";
+import Copywriting from "./pages/Copywriting/Copywriting";
 
 function App() {
   return (
     <>
       <GlobalStyles />
       <Cover />
-      <CopywritingOne />
+      <Copywriting />
     </>
   );
 }

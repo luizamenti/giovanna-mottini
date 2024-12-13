@@ -39,8 +39,7 @@ export default function Cover() {
           <S.Title>AULAS PARTICULARES DE CANTO</S.Title>
           <S.Subtitle>MÉTODO VOZ INFINITA</S.Subtitle>
           <S.NameBox>
-            {/* <S.NameLine>GIOVANNA MOTTINI</S.NameLine> */}
-            <S.NameLine>G</S.NameLine>
+            <S.NameLine>GIOVANNA MOTTINI</S.NameLine>
           </S.NameBox>
         </S.Logo>
         <S.ButtonSet>

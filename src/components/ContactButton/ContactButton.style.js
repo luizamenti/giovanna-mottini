@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const FilledButton = styled.button`
-  border: #8c52ff solid 2px;
+  color: white;
+  border: #8c52ff solid 1px;
   cursor: pointer;
   background-image: url("img/sky-background.png");
   background-size: cover;
