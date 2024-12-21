@@ -9,9 +9,6 @@ export default function Item({ itemData, itemIndex, itemsCount }) {
       <S.Container>
         <S.InnerDiv>
           <S.Content>
-            <S.ItemTitle>{title}</S.ItemTitle>
-            <S.HorizontalLine />
-            <S.ContentBox>{content()}</S.ContentBox>
             <S.ReelLink href={link} target="_blank" rel="noreferrer">
               <S.PhotoBox>
                 <S.InstaReel src={imageSrc} />
@@ -23,6 +20,11 @@ export default function Item({ itemData, itemIndex, itemsCount }) {
                 </svg>
               </S.PhotoBox>
             </S.ReelLink>
+            <S.LegendBox>
+              <S.ItemTitle>{title}</S.ItemTitle>
+              <S.HorizontalLine />
+              <S.ContentBox>{content()}</S.ContentBox>
+            </S.LegendBox>
           </S.Content>
         </S.InnerDiv>
       </S.Container>

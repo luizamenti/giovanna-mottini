@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
 `;
 
 export const InnerDiv = styled.div`
@@ -11,6 +12,12 @@ export const InnerDiv = styled.div`
 `;
 
 export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+`;
+
+export const LegendBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -70,7 +77,9 @@ export const InstaReel = styled.img`
 `;
 
 export const VerticalLine = styled.div`
+  align-self: end;
   border: solid #8c52ff 0.5px;
-  height: 40%;
+  height: 20%;
   width: 1px;
+  margin-bottom: 20px;
 `;

@@ -9,6 +9,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
+    font-family: 'ClearSans';
+    src: url('fonts/ClearSans-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  @font-face {
     font-family: 'TenorSans';
     src: url('fonts/TenorSans-Regular.ttf') format('truetype');
     font-weight: 400;
@@ -37,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'ClearSans-Regular';
+    font-family: 'ClearSans', sans-serif;
   }
 
   p {

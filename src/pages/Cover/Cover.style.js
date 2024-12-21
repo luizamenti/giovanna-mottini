@@ -15,7 +15,7 @@ export const Header = styled.header`
   justify-content: space-between;
 `;
 
-export const Logo = styled.div`
+export const LogoBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,17 +40,22 @@ export const Subtitle = styled.p`
   font-size: 18px;
 `;
 
-export const NameBox = styled.div`
-  background-image: url("img/sky-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-`;
+// export const NameBox = styled.div`
+//   background-image: url("img/sky-background.png");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// `;
 
-export const NameLine = styled.h1`
-  font-family: "Buster", "sans-serif";
-  font-size: 50px;
-  margin: 2px -5px -12px -3px;
+// export const NameLine = styled.h1`
+//   font-family: "Buster", "sans-serif";
+//   font-size: 50px;
+//   margin: 2px -5px -12px -3px;
+// `;
+
+export const Logo = styled.img`
+  width: 400px;
+  margin-right: 15px;
 `;
 
 export const ButtonSet = styled.div`

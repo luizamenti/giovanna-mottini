@@ -5,7 +5,7 @@ import * as S from "./Cover.style";
 import Item from "./Item/Item";
 import ContactButton from "../../components/ContactButton/ContactButton";
 
-export default function Cover() {
+export default function Cover({ onButtonClick }) {
   const itemsData = [
     {
       title: "Aulas de canto para todos os níveis",
@@ -35,20 +35,18 @@ export default function Cover() {
   return (
     <S.Container>
       <S.Header>
-        <S.Logo>
+        <S.LogoBox>
           <S.Title>AULAS PARTICULARES DE CANTO</S.Title>
           <S.Subtitle>MÉTODO VOZ INFINITA</S.Subtitle>
-          <S.NameBox>
-            <S.NameLine>GIOVANNA MOTTINI</S.NameLine>
-          </S.NameBox>
-        </S.Logo>
+          <S.Logo src="img/logo.png" />
+        </S.LogoBox>
         <S.ButtonSet>
-          <S.GhostButton>SAIBA MAIS</S.GhostButton>
+          <S.GhostButton onClick={onButtonClick}>SAIBA MAIS</S.GhostButton>
           <ContactButton />
         </S.ButtonSet>
       </S.Header>
 
-      <S.VideoBox>
+      {/* <S.VideoBox>
         <iframe
           width="500"
           height="250"
@@ -59,7 +57,7 @@ export default function Cover() {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-      </S.VideoBox>
+      </S.VideoBox> */}
 
       <S.ContentSection>
         {itemsData.map((item, index) => (
