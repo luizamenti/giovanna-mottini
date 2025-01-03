@@ -7,8 +7,8 @@ export default function Item({ itemData, itemIndex, itemsCount }) {
   return (
     <>
       <S.Container>
-        <S.InnerDiv>
-          <S.Content>
+        <S.Content>
+          <S.ReelBox>
             <S.ReelLink href={link} target="_blank" rel="noreferrer">
               <S.PhotoBox>
                 <S.InstaReel src={imageSrc} />
@@ -20,13 +20,13 @@ export default function Item({ itemData, itemIndex, itemsCount }) {
                 </svg>
               </S.PhotoBox>
             </S.ReelLink>
-            <S.LegendBox>
-              <S.ItemTitle>{title}</S.ItemTitle>
-              <S.HorizontalLine />
-              <S.ContentBox>{content()}</S.ContentBox>
-            </S.LegendBox>
-          </S.Content>
-        </S.InnerDiv>
+          </S.ReelBox>
+          <S.LegendBox>
+            <S.ItemTitle>{title}</S.ItemTitle>
+            <S.HorizontalLine />
+            {content()}
+          </S.LegendBox>
+        </S.Content>
       </S.Container>
       {itemIndex !== itemsCount - 1 ? <S.VerticalLine /> : <></>}
     </>

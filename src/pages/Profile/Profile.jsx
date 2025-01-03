@@ -1,11 +1,13 @@
-import React, { forwardRef } from "react";
+import React from "react";
 
 import * as S from "./Profile.style";
 
-const Profile = forwardRef((_, ref) => {
+export default function Profile() {
   return (
-    <S.Container ref={ref}>
-      <S.Img src="img/giovanna.JPEG" />
+    <S.Container>
+      <S.ImgBox>
+        <S.Img src="img/giovanna.JPEG" />
+      </S.ImgBox>
       <S.TextBox>
         <S.Title src="img/profile-title.png" />
         <div>
@@ -35,6 +37,4 @@ const Profile = forwardRef((_, ref) => {
       </S.TextBox>
     </S.Container>
   );
-});
-
-export default Profile;
+}

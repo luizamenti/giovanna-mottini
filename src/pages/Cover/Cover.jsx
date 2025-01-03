@@ -1,5 +1,4 @@
 import React from "react";
-
 import * as S from "./Cover.style";
 
 import Item from "./Item/Item";
@@ -26,7 +25,9 @@ export default function Cover({ onButtonClick }) {
     },
     {
       title: "Agende agora mesmo",
-      content: () => <ContactButton />,
+      content: () => (
+        <ContactButton onButtonClick={onButtonClick} label="MARQUE SUA AULA" />
+      ),
       imageSrc: "img/insta-reel-3.png",
       link: "https://www.instagram.com/reel/CwBUSnNInXV/?igsh=MTBxeGFseHQ5ZWJlZA==",
     },
@@ -36,28 +37,22 @@ export default function Cover({ onButtonClick }) {
     <S.Container>
       <S.Header>
         <S.LogoBox>
-          <S.Title>AULAS PARTICULARES DE CANTO</S.Title>
-          <S.Subtitle>MÉTODO VOZ INFINITA</S.Subtitle>
           <S.Logo src="img/logo.png" />
+          <S.Moto>MÉTODO VOZ INFINITA</S.Moto>
         </S.LogoBox>
         <S.ButtonSet>
-          <S.GhostButton onClick={onButtonClick}>SAIBA MAIS</S.GhostButton>
-          <ContactButton />
+          <ContactButton
+            onButtonClick={onButtonClick}
+            label="MARQUE SUA AULA"
+          />
         </S.ButtonSet>
       </S.Header>
 
-      {/* <S.VideoBox>
-        <iframe
-          width="500"
-          height="250"
-          src="https://www.youtube.com/embed/qKITQd4WBzM?si=XfEg_dKeUo1vCee2"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </S.VideoBox> */}
+      <S.TitleBox>
+        <S.Title>AULAS DE CANTO</S.Title>
+        <S.Subtitle>PERSONALIZADAS</S.Subtitle>
+        <S.Subtitle>ONLINE</S.Subtitle>
+      </S.TitleBox>
 
       <S.ContentSection>
         {itemsData.map((item, index) => (

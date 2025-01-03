@@ -5,16 +5,25 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-`;
 
-export const InnerDiv = styled.div`
-  width: 80%;
+  @media (min-width: 600px) {
+    justify-content: unset;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1000px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 `;
 
 export const LegendBox = styled.div`
@@ -25,8 +34,6 @@ export const LegendBox = styled.div`
 
 export const ItemTitle = styled.p`
   font-weight: bold;
-  padding-bottom: 10px;
-  height: 1.25rem;
 `;
 
 export const HorizontalLine = styled.div`
@@ -35,8 +42,9 @@ export const HorizontalLine = styled.div`
   height: 2px;
 `;
 
-export const ContentBox = styled.div`
-  height: 5rem;
+export const ReelBox = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 export const ReelLink = styled.a`
@@ -82,4 +90,9 @@ export const VerticalLine = styled.div`
   height: 20%;
   width: 1px;
   margin-bottom: 20px;
+  display: none;
+
+  @media (min-width: 1000px) {
+    display: flex;
+  }
 `;

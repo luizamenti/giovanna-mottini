@@ -3,16 +3,18 @@ import React from "react";
 import * as S from "./Copywriting.style";
 import ContactButton from "../../components/ContactButton/ContactButton";
 
-export default function Copywriting() {
+export default function Copywriting({ onButtonClick }) {
   return (
     <S.Container>
-      <S.CopywritingSection padding="2rem 20rem">
+      <S.CopywritingSection>
         <S.PreTitleBox>
           <S.Sparkle src="img/sparkle.png" />
-          <S.Text size="19px">Perguntas importantes...</S.Text>
+          <S.Text size="19px" textAlign="center">
+            Perguntas importantes...
+          </S.Text>
           <S.Sparkle src="img/sparkle.png" />
         </S.PreTitleBox>
-        <S.Text size="28px">
+        <S.Text size="28px" textAlign="center">
           Você acha que só pode cantar quem tem "dom"?
         </S.Text>
         <S.Text
@@ -109,18 +111,20 @@ export default function Copywriting() {
           E eu vou te mostrar como transformar sua voz na melhor versão dela.
         </S.Text>
 
-        <ContactButton />
+        <ContactButton onButtonClick={onButtonClick} label="MARQUE SUA AULA" />
       </S.CopywritingSection>
 
       <S.ShowPhoto src="img/show-photo.jpeg" />
 
-      <S.CopywritingSection padding="2rem 10rem">
-        <S.Text size="20px" marginTop="1.5rem">
+      <S.CopywritingSection smallerPadding>
+        <S.Text size="20px" marginTop="1.5rem" marginBottom="1.5rem">
           E se você ainda acredita que cantar é só pra quem tem "dom"...
         </S.Text>
         <S.PreTitleBox>
           <S.Sparkle src="img/sparkle.png" />
-          <S.Text size="28px">O que faz uma voz ser boa para cantar?</S.Text>
+          <S.Text size="28px" textAlign="center">
+            O que faz uma voz ser boa para cantar?
+          </S.Text>
           <S.Sparkle src="img/sparkle.png" />
         </S.PreTitleBox>
 
@@ -133,10 +137,12 @@ export default function Copywriting() {
         </S.Text>
 
         <S.ImgAndText>
-          <S.MouthImage src="img/mouth.png" />
+          <S.ImgBox>
+            <S.MouthImage src="img/mouth.png" />
+          </S.ImgBox>
 
           <S.ParagraphBox>
-            <S.Paragraph marginLeft="5rem">
+            <S.ListParagraph>
               <S.Text size="20px" marginBottom="1rem" marginTop="2.5rem">
                 O que define uma boa voz para o canto?
               </S.Text>
@@ -160,13 +166,12 @@ export default function Copywriting() {
                   esforço.
                 </li>
               </ul>
-            </S.Paragraph>
+            </S.ListParagraph>
             <S.Text
               size="23px"
               color="purple"
               textAlign="center"
               marginTop="3rem"
-              alignSelf="flex-start"
             >
               E aqui vai a melhor notícia:
               <br />
@@ -175,8 +180,8 @@ export default function Copywriting() {
           </S.ParagraphBox>
         </S.ImgAndText>
 
-        <S.CopywritingSection padding="0 10rem">
-          <S.Text size="19px" marginTop="2rem" textAlign="center">
+        <S.CopywritingSection smallerPadding>
+          <S.Text size="19px" marginTop="0.5rem" textAlign="center">
             Com o método certo e a dose de dedicação, você pode atingir esses
             objetivos e se surpreender com a transformação da sua voz.
           </S.Text>

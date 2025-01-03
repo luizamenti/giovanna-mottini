@@ -8,8 +8,13 @@ export const CopywritingSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${({ padding }) => (padding ? padding : "")};
+  padding: ${({ smallerPadding }) =>
+    smallerPadding ? "2rem 2rem" : "2rem 4rem"};
 
+  @media (min-width: 1200px) {
+    padding: ${({ smallerPadding }) =>
+      smallerPadding ? "2rem 10rem" : "2rem 20rem"};
+  }
   p,
   li {
     font-family: "TenorSans", sans-serif;
@@ -26,7 +31,6 @@ export const Sparkle = styled.img`
 
 export const PreTitleBox = styled.div`
   display: flex;
-  width: 80%;
   justify-content: space-between;
   align-items: center;
 `;
@@ -52,17 +56,35 @@ export const ShowPhoto = styled.img`
 
 export const ImgAndText = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin-top: 1rem;
 `;
 
+export const ImgBox = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+`;
+
 export const MouthImage = styled.img`
-  width: 350px;
-  align-self: flex-start;
+  width: 40vw;
+  max-width: 250px;
+  align-self: center;
 `;
 
 export const ParagraphBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+`;
+
+export const ListParagraph = styled.div`
+  padding: 0 2rem;
+
+  @media (min-width: 800px) {
+    margin-left: 5rem;
+  }
 `;

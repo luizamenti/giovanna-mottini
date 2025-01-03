@@ -20,7 +20,7 @@ export default function Testimonials() {
       text: "Gi é uma excelente professora, paciente com aulas dinâmicas sempre disposta a se adaptar ao meu ritmo. Gi também traz exercícios e técnicas novas com muita frequência, está sempre se mantendo atualizada e isso torna a aula sempre interessante, isso que faço aula com ela a 3 anos e ela segue trazendo novidades.\nIndicaria ela para qualquer pessoa de qualquer idade e de qualquer nivel que gostaria de aprender a cantar.",
     },
     {
-      photo: "",
+      photo: "img/renan.png",
       name: "Renan Zacché",
       text: "A Giovanna é ótima, as aulas são super dinâmicas e customizadas de acordo com as minhas necessidades. Em pouco tempo já vejo um grande avanço na minha técnica vocal com as aulas dela. Super recomendo!",
     },
@@ -30,7 +30,7 @@ export default function Testimonials() {
       text: " A Gi é uma excelente professora e uma talentosa musicista. Comecei a fazer aulas com ela há alguns meses e, ao longo desse período, aprendi muito. Suas aulas me ensinaram a respirar adequadamente, a articular melhor todos os músculos necessários para cantar e a equilibrar a atenção entre a voz e o instrumento. Além disso, as aulas são leves, instrutivas e divertidas.",
     },
     {
-      photo: "",
+      photo: "img/mateus.png",
       name: "Mateus",
       text: "A Gi é a melhor professora de canto que ja tive. Ela entendeu o meu caso específico e sem enrolação trabalha (de uma forma leve) especificamente formas de desenvolver e conscientizar minha voz. Cada aula é uma revelação diferente!",
     },

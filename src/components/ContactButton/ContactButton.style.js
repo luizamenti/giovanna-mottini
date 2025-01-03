@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const FilledButton = styled.button`
   color: white;
-  border: #8c52ff solid 1px;
+  border: none;
   cursor: pointer;
-  background-image: url("img/sky-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 50px;
-  font-size: 18px;
+  width: 35vw;
+  max-width: 250px;
+  height: 55px;
+  font-size: 1rem;
   font-weight: bold;
+  border-radius: 30px;
+  background: linear-gradient(to right, #014192, #8c52ff);
 `;

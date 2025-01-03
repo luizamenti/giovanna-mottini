@@ -6,22 +6,24 @@ import Copywriting from "./pages/Copywriting/Copywriting";
 import Method from "./pages/Method/Method";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import Profile from "./pages/Profile/Profile";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
-  const profilePageRef = useRef(null);
+  const pageRef = useRef(null);
 
   const scrollToProfile = () => {
-    profilePageRef.current.scrollIntoView({ behavior: "smooth" });
+    pageRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
       <GlobalStyles />
       <Cover onButtonClick={scrollToProfile} />
-      <Copywriting />
-      <Method />
+      <Copywriting onButtonClick={scrollToProfile} />
+      <Method onButtonClick={scrollToProfile} />
       <Testimonials />
-      <Profile ref={profilePageRef} />
+      <Profile />
+      <Contact ref={pageRef} />
     </>
   );
 }

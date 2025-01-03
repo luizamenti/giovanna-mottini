@@ -4,22 +4,22 @@ import * as S from "./Method.style";
 
 import ContactButton from "../../components/ContactButton/ContactButton";
 
-export default function Method() {
+export default function Method({ onButtonClick }) {
   return (
     <S.Container>
       <S.Content>
         <h1>CONHEÇA O MÉTODO:</h1>
         <S.Title>VOZ INFINITA</S.Title>
-        <S.Text marginTop="3rem">
+        <S.Text>
           Meu método de ensino oferece um acompanhamento personalizado no
           aprendizado do canto, com um curso claro, prático e leve.
         </S.Text>
-        <S.Text marginTop="2rem">
+        <S.Text>
           As aulas são cuidadosamente estruturadas para proporcionar um ambiente
           acolhedor, que encoraja a criatividade, enquanto desafia o aluno a
           explorar e expandir suas capacidades vocais.
         </S.Text>
-        <S.Text marginTop="2rem">
+        <S.Text>
           Cada aula é dividida em duas partes, garantindo um equilíbrio entre
           técnica e expressão artística.
         </S.Text>
@@ -85,7 +85,7 @@ export default function Method() {
           </S.ListBox>
         </S.Box>
 
-        <S.Text marginTop="2.5rem" marginBottom="2rem">
+        <S.Text marginTop="1rem" marginBottom="1rem">
           INFORMAÇÕES IMPORTANTES
         </S.Text>
         <ul>
@@ -98,7 +98,10 @@ export default function Method() {
         </ul>
 
         <S.ButtonBox>
-          <ContactButton />
+          <ContactButton
+            onButtonClick={onButtonClick}
+            label="MARQUE SUA AULA"
+          />
         </S.ButtonBox>
       </S.Content>
     </S.Container>

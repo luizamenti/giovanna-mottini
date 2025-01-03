@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #050d18;
-  padding: 2rem 5rem;
+  padding: 2rem 5%;
+
+  @media (min-width: 1400px) {
+    padding: 2rem 10rem;
+  }
 
   * {
     font-family: "ClearSans", sans-serif;
@@ -13,6 +17,7 @@ export const Container = styled.div`
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const LogoBox = styled.div`
@@ -24,38 +29,37 @@ export const LogoBox = styled.div`
   gap: 5px;
 `;
 
-export const Title = styled.p`
-  width: 100%;
-  letter-spacing: 6px;
+export const Logo = styled.img`
+  width: 40vw;
+  max-width: 260px;
+`;
+
+export const Moto = styled.p`
+  font-family: "TenorSans", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
   text-align: center;
-  font-weight: bold;
+`;
+
+export const TitleBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const Title = styled.p`
+  font-family: "TenorSans", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 20px;
+  margin-top: 3rem;
 `;
 
 export const Subtitle = styled.p`
   font-family: "TenorSans", sans-serif;
-  width: 100%;
-  letter-spacing: 9px;
-  word-spacing: 5px;
-  text-align: center;
-  font-size: 18px;
-`;
-
-// export const NameBox = styled.div`
-//   background-image: url("img/sky-background.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// `;
-
-// export const NameLine = styled.h1`
-//   font-family: "Buster", "sans-serif";
-//   font-size: 50px;
-//   margin: 2px -5px -12px -3px;
-// `;
-
-export const Logo = styled.img`
-  width: 400px;
-  margin-right: 15px;
+  font-size: 14px;
+  margin-top: 10px;
+  letter-spacing: 3px;
 `;
 
 export const ButtonSet = styled.div`
@@ -81,6 +85,11 @@ export const VideoBox = styled.div`
 
 export const ContentSection = styled.section`
   display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
-  margin: 4rem 3rem;
+  grid-auto-rows: auto;
+  margin: 3rem 3rem;
+  gap: 30px;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr;
+  }
 `;
