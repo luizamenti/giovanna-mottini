@@ -5,6 +5,7 @@ export const FilledButton = styled.button`
   border: none;
   cursor: pointer;
   width: 35vw;
+  min-width: 180px;
   max-width: 250px;
   height: 55px;
   font-size: 1rem;

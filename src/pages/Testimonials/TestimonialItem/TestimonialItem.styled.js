@@ -25,5 +25,5 @@ export const Name = styled.p`
 
 export const Text = styled.p`
   font-family: "Biryani", sans-serif;
-  width: 350px;
+  max-width: 350px;
 `;

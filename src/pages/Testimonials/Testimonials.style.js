@@ -12,8 +12,7 @@ export const Container = styled.div`
     font-size: 50px;
   }
 
-  @media (min-width: 1200px) {
-    padding: 5rem 10rem 5rem 10rem;
+  @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
 
     h1 {
@@ -35,6 +34,10 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   width: fit-content;
   padding-left: 3rem;
+
+  @media (min-width: 1200px) {
+    padding-left: 10rem;
+  }
 `;
 
 export const StartsImg = styled.img`

@@ -28,14 +28,18 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   font-size: 40px;
-  letter-spacing: 30px;
+  letter-spacing: 2vw;
   margin-top: 0.2rem;
   text-align: center;
   width: 100%;
+
+  @media (min-width: 800px) {
+    letter-spacing: 3vw;
+  }
 `;
 
 export const Text = styled.p`
-  padding: 2rem 3rem 0rem 3rem;
+  padding: 2rem 1rem 0rem 1rem;
   font-size: ${({ size }) => (size ? size : "18px")};
   color: ${({ color }) => (color === "purple" ? "#8c52ff" : "")};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
@@ -77,6 +81,12 @@ export const Box = styled.span`
 export const VerticalTextBox = styled.div`
   display: flex;
   align-items: center;
+  width: 100px;
+  justify-content: center;
+
+  @media (min-width: 800px) {
+    width: unset;
+  }
 `;
 
 export const VerticalText = styled.h3`
@@ -99,6 +109,10 @@ export const ListBox = styled.div`
   b {
     font-weight: bold;
   }
+`;
+
+export const List = styled.ul`
+  margin: 0 1rem;
 `;
 
 export const ButtonBox = styled.div`

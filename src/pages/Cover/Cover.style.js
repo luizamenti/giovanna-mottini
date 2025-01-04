@@ -37,8 +37,11 @@ export const Logo = styled.img`
 export const Moto = styled.p`
   font-family: "TenorSans", sans-serif;
   font-size: 0.7rem;
-  letter-spacing: 3px;
   text-align: center;
+
+  @media (min-width: 800px) {
+    letter-spacing: 3px;
+  }
 `;
 
 export const TitleBox = styled.div`

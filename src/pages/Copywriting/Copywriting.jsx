@@ -63,7 +63,9 @@ export default function Copywriting({ onButtonClick }) {
         >
           A verdade é que...
         </S.Text>
-        <S.Text size="28px">esses pensamentos são limitantes.</S.Text>
+        <S.Text size="28px" textAlign="center">
+          esses pensamentos são limitantes.
+        </S.Text>
 
         <S.Paragraph>
           <S.Text marginTop="2rem">

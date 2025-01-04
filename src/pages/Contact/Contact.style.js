@@ -62,8 +62,7 @@ export const Input = styled.input`
   margin-top: 5px;
   outline: none;
   color: grey;
-  /* width: 500px; */
-  min-width: 400px;
+  width: 80vw;
   max-width: 500px;
   padding: 20px;
   height: 40px;
@@ -83,8 +82,7 @@ export const TextArea = styled.textarea`
   margin: 5px 0 20px 0;
   outline: none;
   color: grey;
-  /* width: 500px; */
-  min-width: 400px;
+  width: 80vw;
   max-width: 500px;
   padding: 20px;
   height: 150px;

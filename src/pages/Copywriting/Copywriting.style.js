@@ -9,7 +9,7 @@ export const CopywritingSection = styled.div`
   flex-direction: column;
   align-items: center;
   padding: ${({ smallerPadding }) =>
-    smallerPadding ? "2rem 2rem" : "2rem 4rem"};
+    smallerPadding ? "2rem 2rem" : "2rem 2rem"};
 
   @media (min-width: 1200px) {
     padding: ${({ smallerPadding }) =>
@@ -26,7 +26,8 @@ export const CopywritingSection = styled.div`
 `;
 
 export const Sparkle = styled.img`
-  width: 100px;
+  max-width: 100px;
+  width: 20vw;
 `;
 
 export const PreTitleBox = styled.div`

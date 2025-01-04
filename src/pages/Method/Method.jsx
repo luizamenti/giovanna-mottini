@@ -8,7 +8,7 @@ export default function Method({ onButtonClick }) {
   return (
     <S.Container>
       <S.Content>
-        <h1>CONHEÇA O MÉTODO:</h1>
+        <S.Subtitle fontSize="35px">CONHEÇA O MÉTODO:</S.Subtitle>
         <S.Title>VOZ INFINITA</S.Title>
         <S.Text>
           Meu método de ensino oferece um acompanhamento personalizado no
@@ -88,14 +88,14 @@ export default function Method({ onButtonClick }) {
         <S.Text marginTop="1rem" marginBottom="1rem">
           INFORMAÇÕES IMPORTANTES
         </S.Text>
-        <ul>
+        <S.List>
           <li>DURAÇÃO DA AULA: 60 minutos</li>
           <li>TEMOS: Pacotes de aulas e aulas avulsas</li>
           <li>
             Entre em contato para agendar seu horário e receber o valor das
             aulas
           </li>
-        </ul>
+        </S.List>
 
         <S.ButtonBox>
           <ContactButton
