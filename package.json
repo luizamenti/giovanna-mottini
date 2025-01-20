@@ -1,6 +1,6 @@
 {
   "name": "giovanna-mottini",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
