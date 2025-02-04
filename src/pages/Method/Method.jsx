@@ -3,13 +3,24 @@ import React from "react";
 import * as S from "./Method.style";
 
 import ContactButton from "../../components/ContactButton/ContactButton";
+import Carousel from "../../components/Carousel/Carousel";
 
 export default function Method({ onButtonClick }) {
+  const images = [
+    "img/aula1.png",
+    "img/aula2.png",
+    "img/aula3.png",
+    "img/aula4.png",
+  ];
   return (
     <S.Container>
       <S.Content>
         <S.Subtitle fontSize="35px">CONHEÇA O MÉTODO:</S.Subtitle>
         <S.Title>VOZ INFINITA</S.Title>
+        <S.DiagonalLine src="img/diagonal-line.png" />
+
+        <Carousel items={images} />
+
         <S.Text>
           Meu método de ensino oferece um acompanhamento personalizado no
           aprendizado do canto, com um curso claro, prático e leve.
@@ -29,11 +40,14 @@ export default function Method({ onButtonClick }) {
         </S.Subtitle>
         <S.Subtitle size="22px">VOZ INFINITA</S.Subtitle>
 
+        <S.MethodIcon src="img/method-icon.png" />
+
         <S.Subtitle size="23px" marginTop="3rem">
           PRIMEIRA PARTE DA AULA: TÉCNICA VOCAL
         </S.Subtitle>
         <S.Box>
           <S.VerticalTextBox>
+            <S.BoxIcon src="img/engine-icon.png" />
             <S.VerticalText>PRIMEIRA PARTE</S.VerticalText>
           </S.VerticalTextBox>
           <S.ListBox>
@@ -62,6 +76,7 @@ export default function Method({ onButtonClick }) {
         </S.Subtitle>
         <S.Box darkPurple>
           <S.VerticalTextBox>
+            <S.BoxIcon src="img/heart-icon.png" />
             <S.VerticalText>SEGUNDA PARTE</S.VerticalText>
           </S.VerticalTextBox>
           <S.ListBox>

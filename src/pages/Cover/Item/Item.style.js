@@ -22,7 +22,7 @@ export const Content = styled.div`
 
   @media (min-width: 1000px) {
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
   }
 `;
 
@@ -80,8 +80,8 @@ export const PhotoBox = styled.div`
   }
 `;
 
-export const InstaReel = styled.img`
-  width: 200px;
+export const Icon = styled.img`
+  width: 60px;
 `;
 
 export const VerticalLine = styled.div`

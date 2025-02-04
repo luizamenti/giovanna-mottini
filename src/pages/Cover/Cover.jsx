@@ -10,49 +10,69 @@ export default function Cover({ onButtonClick }) {
       title: "Aulas de canto para todos os níveis",
       content: () => (
         <p>
-          Aprenda a cantar do zero ou aprimorar sua voz e musicalidade com aulas
-          de canto particulares personalizadas
+          Aprenda a cantar do zero ou aprimorar sua voz e musicalidade com{" "}
+          <i>aulas de canto particulares personalizadas</i>
         </p>
       ),
-      imageSrc: "img/insta-reel-1.png",
-      link: "https://www.instagram.com/reel/C0eTePsrVqp/?igsh=Z3BwNTk2aG91dzNk",
+      imageSrc: "img/graph-icon.png",
     },
     {
       title: "Faça aula de qualquer lugar do mundo",
-      content: () => <p>Aulas online via Whereby ou Google Meet</p>,
-      imageSrc: "img/insta-reel-2.png",
-      link: "https://www.instagram.com/reel/C9hfcSHOr9M/?igsh=MTh6bGg5amIzdGd5Mg==",
+      content: () => (
+        <p>
+          Aulas online via Google Meet.
+          <br />
+          As aulas <S.NoWord>não</S.NoWord> são presenciais.
+        </p>
+      ),
+      imageSrc: "img/computer-icon.png",
     },
     {
       title: "Agende agora mesmo",
       content: () => (
         <ContactButton onButtonClick={onButtonClick} label="MARQUE SUA AULA" />
       ),
-      imageSrc: "img/insta-reel-3.png",
-      link: "https://www.instagram.com/reel/CwBUSnNInXV/?igsh=MTBxeGFseHQ5ZWJlZA==",
+      imageSrc: "img/screen-icon.png",
     },
   ];
 
   return (
     <S.Container>
-      <S.Header>
-        <S.LogoBox>
-          <S.Logo src="img/logo.png" />
-          <S.Moto>MÉTODO VOZ INFINITA</S.Moto>
-        </S.LogoBox>
-        <S.ButtonSet>
-          <ContactButton
-            onButtonClick={onButtonClick}
-            label="MARQUE SUA AULA"
-          />
-        </S.ButtonSet>
-      </S.Header>
+      <S.PaddingContainer>
+        <S.Header>
+          <S.LogoBox>
+            <S.Logo src="img/logo.png" />
+            <S.Moto>MÉTODO VOZ INFINITA</S.Moto>
+          </S.LogoBox>
+          <S.ButtonSet>
+            <ContactButton
+              onButtonClick={onButtonClick}
+              label="MARQUE SUA AULA"
+            />
+          </S.ButtonSet>
+        </S.Header>
 
-      <S.TitleBox>
-        <S.Title>AULAS DE CANTO</S.Title>
-        <S.Subtitle>PERSONALIZADAS</S.Subtitle>
-        <S.Subtitle>ONLINE</S.Subtitle>
-      </S.TitleBox>
+        <S.TitleBox>
+          <S.Title>AULAS DE CANTO</S.Title>
+          <S.SubtitleBox>
+            <S.Subtitle>PERSONALIZADAS</S.Subtitle>
+            <S.Subtitle>ONLINE</S.Subtitle>
+          </S.SubtitleBox>
+        </S.TitleBox>
+
+        <S.VideoBox>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gJfCjoDPlFU?si=grmVEO6dLS0eqO9l"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </S.VideoBox>
+      </S.PaddingContainer>
 
       <S.ContentSection>
         {itemsData.map((item, index) => (

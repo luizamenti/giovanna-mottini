@@ -38,6 +38,10 @@ export const Title = styled.h1`
   }
 `;
 
+export const DiagonalLine = styled.img`
+  width: 75%;
+`;
+
 export const Text = styled.p`
   padding: 2rem 1rem 0rem 1rem;
   font-size: ${({ size }) => (size ? size : "18px")};
@@ -63,6 +67,10 @@ export const Subtitle = styled.h2`
   text-align: center;
 `;
 
+export const MethodIcon = styled.img`
+  width: 150px;
+`;
+
 export const Box = styled.span`
   margin: 0rem;
   background-color: ${({ darkPurple }) => (darkPurple ? "#5f36af" : "#8c52ff")};
@@ -72,6 +80,7 @@ export const Box = styled.span`
   min-height: 208px;
   margin-top: 3px;
   padding: 5px;
+  position: relative;
 
   @media (min-width: 800px) {
     width: 65%;
@@ -87,6 +96,12 @@ export const VerticalTextBox = styled.div`
   @media (min-width: 800px) {
     width: unset;
   }
+`;
+
+export const BoxIcon = styled.img`
+  width: 70px;
+  position: absolute;
+  left: -35px;
 `;
 
 export const VerticalText = styled.h3`
