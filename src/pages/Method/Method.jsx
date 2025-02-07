@@ -11,6 +11,9 @@ export default function Method({ onButtonClick }) {
     "img/aula2.png",
     "img/aula3.png",
     "img/aula4.png",
+    "img/aula5.png",
+    "img/aula6.png",
+    "img/aula7.png",
   ];
   return (
     <S.Container>

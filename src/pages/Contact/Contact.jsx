@@ -23,7 +23,7 @@ const Contact = forwardRef((_, ref) => {
     if (emptyFields.length) return;
 
     setIsSending(true);
-
+    handleConversion();
     sendEmail();
   }
 
@@ -57,6 +57,18 @@ const Contact = forwardRef((_, ref) => {
           setIsSending(false);
         }
       );
+  }
+
+  function handleConversion() {
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-11539168849/lnzeCKOVr4AaENH8pv4q",
+        value: 1.0,
+        currency: "BRL",
+      });
+    } else {
+      console.error("gtag não carregado ainda");
+    }
   }
 
   function onInputChange(text, field) {

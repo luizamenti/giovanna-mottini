@@ -67,8 +67,7 @@ export const SubtitleBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 40px;
-  gap: 7px;
+  padding: 10px 40px;
   margin-top: 10px;
 `;
 

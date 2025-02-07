@@ -46,14 +46,15 @@ export default function Plans() {
 
       <S.Content>
         {plans.map((plan) => (
-          <div>
-            <S.Text size="50px" color="purple">
-              {plan.title}
-            </S.Text>
-            <S.Text size="17px">{plan.subtitle}</S.Text>
-            <S.Text size="17px">{plan.value}</S.Text>
-            <S.Text size="17px">{plan.duration}</S.Text>
-          </div>
+          <S.PlanBox>
+            <S.ArrowImg src="img/black-background-arrow.png" />
+            <S.PlanTexts>
+              <S.PlanTitle>{plan.title}</S.PlanTitle>
+              <S.Text size="19px">{plan.subtitle}</S.Text>
+              <S.Text size="19px">{plan.value}</S.Text>
+              <S.Text size="19px">{plan.duration}</S.Text>
+            </S.PlanTexts>
+          </S.PlanBox>
         ))}
       </S.Content>
     </S.Container>

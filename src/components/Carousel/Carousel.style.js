@@ -22,12 +22,12 @@ export const LeftArrow = styled.img`
   width: 80%;
   min-width: 50px;
   max-width: 60px;
-  margin-right: 15rem;
+  margin-right: 10rem;
 `;
 
 export const RightArrow = styled.img`
   width: 80%;
   min-width: 50px;
   max-width: 60px;
-  margin-left: 15rem;
+  margin-left: 10rem;
 `;
