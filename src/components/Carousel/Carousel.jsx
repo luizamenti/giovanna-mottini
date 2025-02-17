@@ -20,6 +20,7 @@ export default function Carousel({ items }) {
                 src={item}
                 className="d-block w-100"
                 alt="Computador com captura de tela de uma aula online"
+                style={{ maxWidth: "400px" }}
               />
             </div>
           </div>
